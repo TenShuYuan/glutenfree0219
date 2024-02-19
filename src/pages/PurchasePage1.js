@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/PurchasePage1.css';
 import crown1 from "../images/purchase/Catalog-crown1.png";
@@ -14,6 +14,13 @@ import catalog7 from "../images/purchase/Catalog7.png";
 import cornicon from "../images/recipe1/menu-icons/icon-corn.png";
 
 function PurchasePage1() {
+    useEffect(() => {
+        const imageList = [crown1, crown2, crown3, catalog1, catalog2, catalog3, catalog4, catalog5, catalog6, catalog7, cornicon]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
     return (
 // 主要內容區 
 <>
