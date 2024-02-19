@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/RecipePage.css';
 import iconoil from "../images/menu-icons/icon-oil.png";
@@ -36,6 +36,14 @@ import rec25 from "../images/recipe/rec25.png";
 
 
 function RecipePage() {
+    useEffect(() => {
+        const imageList = [iconoil, cherry, soy, bigheart, big, rec1big, rec1, rec2, rec3, rec4, rec5, rec6, rec7, rec8, rec9,
+            rec10, rec11, rec12, rec13, rec14, rec15, rec16, rec17, rec18, rec19, rec20, rec21,rec22,rec23,rec24,rec25]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
     // const [showImage, setShowImage] = useState(false);
     // const handleClick = () => {
     //     setShowImage(!showImage);
