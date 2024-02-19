@@ -277,14 +277,40 @@ body {
     position: absolute;
     right: 141px;
     z-index: 9;
+    animation: rotateAnimation 0.5s ease-in-out infinite; /* 使用 ease-in-out 平滑过渡 */
 }
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg); /* 在中间点完成一半的旋转 */
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
 .soy{
     width: 83px;
     position: absolute; 
     right: 595px;
     top: 960px;
     z-index: 9;
+    animation: pulse 0.5s infinite; /* 使用名为 pulse 的动画，持续时间为 2 秒，无限循环 */
+  }
+  @keyframes pulse {
+      0% {
+          transform: scale(1); /* 初始大小 */
+      }
+      50% {
+          transform: scale(1.02); /* 放大到 1.2 倍 */
+      }
+      100% {
+          transform: scale(1); /* 返回原始大小 */
+      }
 }
+
 #cake{
     /* height: 170vh; */
     margin-top: 100px;
