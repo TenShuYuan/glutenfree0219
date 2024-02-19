@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import '../style/RecipePage.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../style/RecipePage.css";
 import iconoil from "../images/menu-icons/icon-oil.png";
 import cherry from "../images/recipe/cherry_no leg.png";
 import soy from "../images/recipe/soy_no leg.png";
-import bigheart from "../images/recipe/heart-hover.png";
+import bigheart from "../images/recipe/heart1.png";
+import bighearthover from "../images/recipe/heart-hover.png";
 import big from "../images/recipe/big.png";
 import rec1big from "../images/recipe/rec1big.png";
 import rec1 from "../images/recipe/rec1.png";
@@ -33,148 +34,207 @@ import rec23 from "../images/recipe/rec23.png";
 import rec24 from "../images/recipe/rec24.png";
 import rec25 from "../images/recipe/rec25.png";
 
-
-
 function RecipePage() {
-    useEffect(() => {
-        const imageList = [iconoil, cherry, soy, bigheart, big, rec1big, rec1, rec2, rec3, rec4, rec5, rec6, rec7, rec8, rec9,
-            rec10, rec11, rec12, rec13, rec14, rec15, rec16, rec17, rec18, rec19, rec20, rec21,rec22,rec23,rec24,rec25]
-        imageList.forEach((image) => {
-          new Image().src = image
-        });
-      }, [])
+  useEffect(() => {
+    const imageList = [
+      iconoil,
+      cherry,
+      soy,
+      bigheart,
+      big,
+      rec1big,
+      rec1,
+      rec2,
+      rec3,
+      rec4,
+      rec5,
+      rec6,
+      rec7,
+      rec8,
+      rec9,
+      rec10,
+      rec11,
+      rec12,
+      rec13,
+      rec14,
+      rec15,
+      rec16,
+      rec17,
+      rec18,
+      rec19,
+      rec20,
+      rec21,
+      rec22,
+      rec23,
+      rec24,
+      rec25,
+    ];
+    imageList.forEach((image) => {
+      new Image().src = image;
+    });
+  }, []);
 
-    // const [showImage, setShowImage] = useState(false);
-    // const handleClick = () => {
-    //     setShowImage(!showImage);
-    // };
-    // const [heartImage, setHeartImage] = useState("./images/recipe/heart1.png");
+  // const [showImage, setShowImage] = useState(false);
+  // const handleClick = () => {
+  //     setShowImage(!showImage);
+  // };
+  // const [heartImage, setHeartImage] = useState("./images/recipe/heart1.png");
 
-// const handleClick = () => {
-//     setHeartImage(prevImage => {
-//         if (prevImage === "./images/recipe/heart1.png") {
-//             return "./images/recipe/heart-hover.png";
-//         } else {
-//             return "./images/recipe/heart1.png";
-//         }
-//     });
-// };
-    return (
-        <>
-<section id="filter"> 
-    <h3>食譜類別搜尋</h3><hr style={{ border: '0.3px solid #DDA25F' }} />
-    <div class="tag">
-        <div class="tag1">
-        <Link to="/recipePage"><p>塔/派皮</p></Link>
-        </div>
-        <div class="tag2">
-        <Link to="/recipePage"><p>餅乾</p></Link>
-        </div>
-        <div class="tag3">
-        <Link to="/recipePage"><p>慕斯</p></Link>
-        </div>
-        <div class="tag4">
-        <Link to="/recipePage"><p>糕點</p></Link>
-        </div>
-        <div class="tag5">
-        <Link to="/recipePage"><p>麵包</p></Link>
-        </div>
-        <div class="tag6">
-        <Link to="/recipePage"><p>冰品</p></Link>
-        </div>
-        <div class="tag7">
-        <Link to="/recipePage2"><p>布丁/果凍</p></Link>
-        </div>
-        <div class="tag8">
-        <Link to="/recipePage"><p>甜湯</p></Link>
-        </div>
-    </div>
+  // const handleClick = () => {
+  //     setHeartImage(prevImage => {
+  //         if (prevImage === "./images/recipe/heart1.png") {
+  //             return "./images/recipe/heart-hover.png";
+  //         } else {
+  //             return "./images/recipe/heart1.png";
+  //         }
+  //     });
+  // };
 
-</section>
+  const [isLike, setIsLike] = useState(false);
 
-{/* 主要內容區 */}
-    <section id="cake">
-        <p className="cherry"><img src={cherry} alt="" /></p>
-        <p className="soy"><img src={soy} alt="" /></p>
-        <div className='today-title'>
-        <img src={iconoil} alt=""/>
-        <h1>今日食譜</h1>
+  return (
+    <>
+      <section id="filter">
+        <h3>食譜類別搜尋</h3>
+        <hr style={{ border: "0.3px solid #DDA25F" }} />
+        <div class="tag">
+          <div class="tag1">
+            <Link to="/recipePage">
+              <p>塔/派皮</p>
+            </Link>
+          </div>
+          <div class="tag2">
+            <Link to="/recipePage">
+              <p>餅乾</p>
+            </Link>
+          </div>
+          <div class="tag3">
+            <Link to="/recipePage">
+              <p>慕斯</p>
+            </Link>
+          </div>
+          <div class="tag4">
+            <Link to="/recipePage">
+              <p>糕點</p>
+            </Link>
+          </div>
+          <div class="tag5">
+            <Link to="/recipePage">
+              <p>麵包</p>
+            </Link>
+          </div>
+          <div class="tag6">
+            <Link to="/recipePage">
+              <p>冰品</p>
+            </Link>
+          </div>
+          <div class="tag7">
+            <Link to="/recipePage2">
+              <p>布丁/果凍</p>
+            </Link>
+          </div>
+          <div class="tag8">
+            <Link to="/recipePage">
+              <p>甜湯</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 主要內容區 */}
+      <section id="cake">
+        <p className="cherry">
+          <img src={cherry} alt="" />
+        </p>
+        <p className="soy">
+          <img src={soy} alt="" />
+        </p>
+        <div className="today-title">
+          <img src={iconoil} alt="" />
+          <h1>今日食譜</h1>
         </div>
         <div className="today">
-            <Link to="/recipePage/recipePage1">
             <figure className="today1">
-            <img className='big-heart' src={bigheart} alt="" />
-                <img className='big' src={big} alt="" />
-            </figure>
+              <img
+                onClick={() => setIsLike(!isLike)}
+                className="big-heart"
+                src={isLike ? bighearthover : bigheart}
+                alt="like"
+              />
+            <Link to="/recipePage/recipePage1">
+              <img className="big" src={big} alt="" />
             </Link>
+            </figure>
         </div>
-        <div className='west-title'>
-        <img src={iconoil} alt=""/>
-        <h1>西式甜點</h1>
+        <div className="west-title">
+          <img src={iconoil} alt="" />
+          <h1>西式甜點</h1>
         </div>
         <div className="west">
-            <figure className="west1">
-                <img src={rec1big} alt="" />
-            </figure>
-            <figure className="west2">
-                <p className="p1">
-                <img src={rec1} alt="" />
-                <img src={rec2} alt="" />
-                <img src={rec3} alt="" />
-                </p>
-                <p className="p2">
-                <img src={rec4} alt="" />
-                <img src={rec5} alt="" />
-                <img src={rec6} alt="" />
-                </p>
-            </figure>
+          <figure className="west1">
+            <img src={rec1big} alt="" />
+          </figure>
+          <figure className="west2">
+            <p className="p1">
+              <img src={rec1} alt="" />
+              <img src={rec2} alt="" />
+              <img src={rec3} alt="" />
+            </p>
+            <p className="p2">
+              <img src={rec4} alt="" />
+              <img src={rec5} alt="" />
+              <img src={rec6} alt="" />
+            </p>
+          </figure>
         </div>
-        <div className='east-title'>
-        <img src={iconoil} alt=""/>
-        <h1>中式甜點</h1>
+        <div className="east-title">
+          <img src={iconoil} alt="" />
+          <h1>中式甜點</h1>
         </div>
         <div className="east">
-            <figure className="east1">
-                <img src={rec7} alt="" />
-                <img src={rec8} alt="" />
-                <img src={rec9} alt="" />
-                <img src={rec10} alt="" />
-                <img src={rec11} alt="" />
-            </figure>
-            <figure className="east2">
-                <img src={rec12} alt="" />
-                <img src={rec13} alt="" />
-                <img src={rec14} alt="" />
-                <img src={rec15} alt="" />
-                <img src={rec16} alt="" />
-            </figure>
+          <figure className="east1">
+            <img src={rec7} alt="" />
+            <img src={rec8} alt="" />
+            <img src={rec9} alt="" />
+            <img src={rec10} alt="" />
+            <img src={rec11} alt="" />
+          </figure>
+          <figure className="east2">
+            <img src={rec12} alt="" />
+            <img src={rec13} alt="" />
+            <img src={rec14} alt="" />
+            <img src={rec15} alt="" />
+            <img src={rec16} alt="" />
+          </figure>
         </div>
-        <div className='japanese-title'>
-        <img src={iconoil} alt=""/>
-        <h1>日式甜點</h1>
+        <div className="japanese-title">
+          <img src={iconoil} alt="" />
+          <h1>日式甜點</h1>
         </div>
         <div className="japanese">
-            <figure className="japanese1">
-                <img src={rec17} alt="" />
-                <img src={rec18} alt="" />
-                <img src={rec19} alt="" />
-                <img src={rec20} alt="" />
-                <img src={rec21} alt="" />
-            </figure>
-            <figure className="japanese2">
-                <img src={rec22} alt="" />
-                <img src={rec23} alt="" />
-                <img src={rec24} alt="" />
-                <img src={rec25} alt="" />
-                <img src={rec25} alt="" />
-            </figure>
+          <figure className="japanese1">
+            <img src={rec17} alt="" />
+            <img src={rec18} alt="" />
+            <img src={rec19} alt="" />
+            <img src={rec20} alt="" />
+            <img src={rec21} alt="" />
+          </figure>
+          <figure className="japanese2">
+            <img src={rec22} alt="" />
+            <img src={rec23} alt="" />
+            <img src={rec24} alt="" />
+            <img src={rec25} alt="" />
+            <img src={rec25} alt="" />
+          </figure>
         </div>
         <div className="seemore-btn">
-        <a href="/" target="_self"><p>查看更多食譜</p></a>
+          <a href="/" target="_self">
+            <p>查看更多食譜</p>
+          </a>
         </div>
-    </section>
-    {/* <Footer/> */}
+      </section>
+      {/* <Footer/> */}
     </>
-    );
+  );
 }
 export default RecipePage;

@@ -350,11 +350,18 @@ body {
     height: 79px;
     top: 482px;
     right: 54px;
-    visibility: hidden;
-}
-.today1:hover .big-heart {
+    /* visibility: hidden; */
+  }
+  /* .today1:hover .big-heart {
     visibility: visible;
-}
+  } */
+/* .big-hearthover {
+  position: absolute;
+  width: 76px;
+  height: 79px;
+  top: 482px;
+  right: 54px;
+} */
 
 .west-title{
   display: flex;
