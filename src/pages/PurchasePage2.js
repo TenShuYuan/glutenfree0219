@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/PurchasePage2.css';
 import pur_egg2 from "../images/purchase2/egg.png";
@@ -17,6 +17,14 @@ import pic3 from "../images/purchase2/restaurant1.png";
 import pic4 from "../images/purchase2/restaurant4.png";
 
 function PurchasePage2() {
+    useEffect(() => {
+        const imageList = [pur_egg2, pur_soy2, pur_blueberry2, pur_walnut2, pur_cherry2,
+             pur_blackcherry2, pur_single2, pic1, map, phone, time, pic2, pic3, pic4]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
     return (
 <>
 <section id="filter-second"> 
