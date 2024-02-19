@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import banner from "../images/banner/banner-20240211_v2.gif";
@@ -22,6 +22,14 @@ import roundblock from "../images/bg-blocks/bground2.png";
 
 
 function Homepage() {
+  useEffect(() => {
+    const imageList = [banner, aboutusavocado, aboutuscashew, iconrice, 
+      iconyam, iconveg, knowledge, purchase, recipe, blue, toppic1,squareblock, toppic2, pathegg,
+      bottompic1, bottompic2, roundblock]
+    imageList.forEach((image) => {
+      new Image().src = image
+    });
+  }, [])
   const ref = useRef();
   const handleClick =()=>{
     ref.current?.scrollIntoView({behavior:"smooth"})
