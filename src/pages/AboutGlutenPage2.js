@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../style/AboutGlutenPage2.css';
 import line2 from "../images/aboutgluten-comic2/line.png";
-import comictitle from "../images/aboutgluten-comic/title1.png";
+import comictitle from "../images/aboutgluten-comic2/title1.png";
 import part1 from "../images/aboutgluten-comic2/egg-bg.png";
 import part2 from "../images/aboutgluten-comic2/character-bg.png";
 import talk1 from "../images/aboutgluten-comic2/egg-talk.png";

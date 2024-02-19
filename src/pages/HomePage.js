@@ -125,7 +125,7 @@ function Homepage() {
         <div className="top2">
         <Link to="/aboutGlutenPage">
           <img className='toppic2' src={toppic2} alt="" />
-          <p>麩質的症狀?</p>
+          <Link to="/aboutGlutenPage2"><p>麩質的症狀?</p></Link>
         </Link>
         </div>
       </div>
