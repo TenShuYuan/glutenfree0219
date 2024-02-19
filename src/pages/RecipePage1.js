@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import "../style/RecipePage1.css";
 import soy_leg2 from "../images/recipe1/soy_no leg2.png";
 import cherry_leg2 from "../images/recipe1/cherry_no leg2.png";
@@ -19,6 +20,14 @@ import more4 from "../images/recipe1/more4.png";
 import more5 from "../images/recipe1/more5.png";
 
 function RecipePage1() {
+    useEffect(() => {
+        const imageList = [soy_leg2,cherry_leg2,main_pic,heart3,yam_noleg,rec1, rec2, rec3, rec4, rec5, rec6, rec7,
+            rec8,more1,more2,more3,more4,more5 ]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
   return (
     <>
     {/* 主圖內容  */}
