@@ -281,13 +281,13 @@ body {
 }
 @keyframes rotateAnimation {
   0% {
-    transform: rotate(3deg);
+    transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-3deg); /* 在中间点完成一半的旋转 */
+    transform: rotate(-2deg); /* 在中间点完成一半的旋转 */
   }
   100% {
-    transform: rotate(3deg);
+    transform: rotate(2deg);
   }
 }
 
