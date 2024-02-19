@@ -12,12 +12,12 @@ import knowledge from "../images/3functions/pic_knowledge.png";
 import purchase from "../images/3functions/pic_purchase.png";
 import recipe from "../images/3functions//pic_recipe.png";
 import blue from "../images/pic-with-shadow/4blueberry.png";
-import toppic1 from "../images/about-gluten-mainpage/what-is-gluten1.png";
+import toppic1 from "../images/about-gluten-mainpage/what-is-gluten1-1.png";
 import squareblock from "../images/bg-blocks/bgsquare1.png";
-import toppic2 from "../images/about-gluten-mainpage/gluten-ill2.png";
+import toppic2 from "../images/about-gluten-mainpage/gluten-ill2-1.png";
 import pathegg from "../images/pic-with-shadow/egg.png";
-import bottompic1 from "../images/about-gluten-mainpage/gluten-food3.png";
-import bottompic2 from "../images/about-gluten-mainpage/how-to-eat4.png";
+import bottompic1 from "../images/about-gluten-mainpage/gluten-food3-1.png";
+import bottompic2 from "../images/about-gluten-mainpage/how-to-eat4-1.png";
 import roundblock from "../images/bg-blocks/bground2.png";
 
 
