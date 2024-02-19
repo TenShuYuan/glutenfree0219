@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../style/AboutGlutenPage.css';
 import line from "../images/aboutgluten-comic/line.png";
 import comictitle from "../images/aboutgluten-comic/title1.png";
@@ -11,6 +11,13 @@ import talk3 from "../images/aboutgluten-comic/character-reply2.png";
 import part4 from "../images/aboutgluten-comic/rice-talk.png";
 
 function AboutGlutenPage() {
+  useEffect(() => {
+    const imageList = [line, comictitle, part1, part2, talk1, talk2, part3, talk3, part4]
+    imageList.forEach((image) => {
+      new Image().src = image
+    });
+  }, [])
+
     return (
 <>
 <div className='pattern'>
