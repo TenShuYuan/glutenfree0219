@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../style/PurchasePagesub.css";
 import addcart from "../images/purchase_sub/addcart.png";
 import bread from "../images/purchase_sub/bread.png";
@@ -11,6 +11,13 @@ import nuts from "../images/purchase_sub/nuts.png";
 import arrow from "../images/purchase_sub/arrow.png";
 
 function PurchasePagesub() {
+  useEffect(() => {
+    const imageList = [addcart, bread, icon1, icon2, icon3, icon4, addcarthover, nuts, arrow]
+    imageList.forEach((image) => {
+      new Image().src = image
+    });
+  }, [])
+
   const [count, setCount] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
 
