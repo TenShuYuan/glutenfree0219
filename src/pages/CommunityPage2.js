@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/CommunityPage2.css';
 import banner_com from "../images/community/banner_com.png";
@@ -30,6 +30,14 @@ import post_cherry1 from "../images/community/cherry_post1.png";
 
  
 function CommunityPage2() {
+    useEffect(() => {
+        const imageList = [banner_com, bg2,soy_post2,blue_post2,cashew_post2,strawberry_post2,rice_add,add_bottom,
+        add_bg,post1,post2,blues_post1,post3,post4,post5,post6,post7,post8,post9,post10,post11,post12,post13,post14,post_egg1,post_cherry1]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
     return (
         // Banner
         <section className='post_2'>
