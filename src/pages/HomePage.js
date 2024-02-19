@@ -38,7 +38,7 @@ function Homepage() {
 // <!-- 關於首頁內容 -->
     <>
     {/* <div></div> */}
-    <button style={{marginTop:200,marginLeft:530, fontSize:30, color: '#fffcf5', backgroundcolor: '#fffcf5'}} 
+    <button style={{marginTop:100,marginLeft:530, fontSize:30, color: '#fffcf5', backgroundcolor: '#fffcf5' }} 
     onClick={handleClick}>關於我們</button>
 
     {/* <!-- 換圖輪播 --> */}
