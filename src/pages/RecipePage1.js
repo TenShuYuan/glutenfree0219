@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React,{ useEffect } from 'react';
 import "../style/RecipePage1.css";
 import soy_leg2 from "../images/recipe1/soy_no leg2.png";
 import cherry_leg2 from "../images/recipe1/cherry_no leg2.png";

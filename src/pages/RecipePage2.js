@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/RecipePage2.css';
 import blueberry_2 from "../images/recipe_2/blue4.png";
@@ -34,6 +34,14 @@ import rec26 from "../images/recipe_2/rec26.png";
 import iconoil from "../images/menu-icons/icon-oil.png";
 
 function RecipePage2() {
+    useEffect(() => {
+        const imageList = [blueberry_2,strawberry_2,big_2,rec1big,rec1, rec2, rec3, rec4, rec5, rec6, rec7,
+            rec8,rec9,rec10,rec11,rec12,rec13,rec14,rec15,rec16,rec17,rec18,rec19,rec20,rec21,rec22,rec23,rec24,rec25,rec26,iconoil ]
+        imageList.forEach((image) => {
+          new Image().src = image
+        });
+      }, [])
+
     return (
         <>
 <section id="filter_2"> 
