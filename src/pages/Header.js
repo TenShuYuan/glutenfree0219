@@ -26,7 +26,7 @@ function Header() {
           <div className="menu-aboutus">
             <p><img src="./images/menu-icons/icon-egg.svg" alt="" /></p>
             <ul className="menu-aboutus-text">
-            <Link to="/#aboutus" >關於我們<br />About us</Link>
+            <Link to="/#aboutus">關於我們<br />About us</Link>
             </ul>
           </div>
           <div className="menu-aboutgluten">
@@ -45,7 +45,7 @@ function Header() {
           <div className="menu-purchase">
             <p><img src="./images/menu-icons/icon-corn.svg" alt="" /></p>
             <ul className="menu-purchase-text">
-              <li>購買管道<br />Purchase
+            <li><Link to="/purchasePage">購買管道<br />Purchase</Link>
                 <ul className="droppurchase">
                 <li><Link to="/purchasePage">線上商城</Link></li>
                 <li><Link to="/purchasePage2">實體通路</Link></li>
@@ -68,9 +68,8 @@ function Header() {
           
           <div className="menu-comminity">
             <p><img src="./images/menu-icons/icon-rice.svg" alt="" /></p>
-            <ul className="menu-comminity-text"><a href="#community">
+            <ul className="menu-comminity-text">
             <Link to="/communityPage">無麩友社群<br />Community</Link>
-              </a>
             </ul>
           </div>
         </div>
