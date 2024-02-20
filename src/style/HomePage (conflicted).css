@@ -482,9 +482,7 @@ img {
   
   /* Add css 2024.02.05 */
   #banner {
-    margin: auto;
     margin-top: 0px;
-    /* position: relative; */
   }
   #banner .content-slider img{
     /* border: #aaa0a0 solid 2px ; */
@@ -759,15 +757,13 @@ img {
 
 @media (max-width: 768px
 /* 最大寬為768，小於768的都會符合他的尺寸縮放 */
-/*平板的像素*/
+  /*平板的像素*/
 ) {
   #banner .content-slider figure img{
-    display: flex;
-  /* 水平置中 */
-  justify-content: center;          
-    margin:auto;
-    width: 1220px;
-    transform: scale(0.7);
+    margin-top: 0px;
+    width: 1000px;
+    /* height: 800px; */
+    transform: scale(0.5);
   }
   .menu-aboutgluten .list-item:last-child {
     display: none;
