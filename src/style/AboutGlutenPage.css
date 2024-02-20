@@ -316,3 +316,39 @@ body {
     left: 1260px;
     z-index: 5;
   }
+
+  @media (max-width: 768px
+/* 最大寬為768，小於768的都會符合他的尺寸縮放 */
+/*平板的像素*/
+) {
+  #comic{
+    margin-bottom: -800px;
+    width: 100px;
+    margin-left:40px;
+    margin-top: -700px;
+    transform: scale(0.5);
+  }
+  #comic .comic-title{
+    margin-left: 130px;
+  }
+  #comic .part2{
+    margin-left: -175px;
+    margin-top: 130px;
+    transform: scale(0.7);
+  }
+  #comic .talk2{
+    margin-top: 100px;
+    margin-left: -505px;
+    transform: scale(0.75);
+  }
+  #comic .part3{
+    margin-left: -300px;
+    transform: scale(0.6);
+  }
+  #comic .talk3{
+    margin-top: 450px;
+    margin-left: -260px;
+    transform: scale(0.8);
+  }
+
+}

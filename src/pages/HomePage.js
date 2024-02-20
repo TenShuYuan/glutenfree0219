@@ -38,7 +38,7 @@ function Homepage() {
 // <!-- 關於首頁內容 -->
     <>
     {/* <div></div> */}
-    <button style={{marginTop:100,marginLeft:530, fontSize:30, color: '#fffcf5', backgroundcolor: '#fffcf5' }} 
+    <button style={{marginTop:80,marginLeft:530, fontSize:30, color: '#fffcf5', backgroundcolor: '#fffcf5' }} 
     onClick={handleClick}>關於我們</button>
 
     {/* <!-- 換圖輪播 --> */}
@@ -51,7 +51,7 @@ function Homepage() {
         </div>
     </section>
 
-<section ref={ref} style={{height:200,}}></section>
+<section ref={ref} style={{height:50,}}></section>
     <section  id="aboutus">
       {/* <img className="aboutus-yam" src="./images/pic-with-shadow/avocado.png" alt=""/>
       <img className="aboutus-cashew" src="./images/pic-with-shadow/cashew.png" alt=""/> */}
