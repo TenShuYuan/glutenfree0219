@@ -231,10 +231,10 @@ img {
   #banner .content-slider figure img{
     object-fit: cover;
     margin: auto;
-    margin-top: 0px;
+    margin-top: -35px;
     width: 1400px;
     height: 930px;
-    transform: scale(1.1);
+    transform: scale(1.05);
     /* justify-content: center; */
     }  
 
