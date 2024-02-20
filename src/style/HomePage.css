@@ -562,7 +562,7 @@ img {
   }
   #aboutgluten-path .top, .bottom{
     /* border: #8a2be2 1px solid; */
-    margin-top: 50px;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
   }
