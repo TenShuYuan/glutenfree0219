@@ -196,6 +196,7 @@ img {
 .product {
   position: relative;
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 .product .content {
   display: flex;
