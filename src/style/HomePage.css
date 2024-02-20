@@ -378,125 +378,7 @@ img {
     font-weight: 400;
     color: var(--major-color);
   }
-  
-  /* 麩質教室快捷鍵區 */
-  /* .path-egg {
-    position: absolute;
-    width: 160px;
-    left: 200px;
-    top: 2700px;
-    z-index: 4;
-  } */
-  /* .path-cashew {
-  -moz-transform:scaleX(-1);
-  -webkit-transform:scaleX(-1);
-  -o-transform:scaleX(-1);
-  transform:scaleX(-1) rotate(15deg);
-    position: absolute;
-    width: 130px;
-    right: 350px;
-    top: 2200px;
-    z-index: 4;
-  } */
-  
-  /* #aboutgluten-path { */
-    /* border: #a52a2a solid; */
-    /* width: 1040px;
-    margin: auto;
-    padding-top: 60px;
-    padding-bottom: 100px;
-  } */
-  
-  /* #aboutgluten-path .title {
-    color: var(--major-color2);
-    padding-top: 3rem;
-    font-weight: 500;
-    display: flex;
-  } */
-  /* #aboutgluten-path .title img{
-    width: 20px;
-    margin: 5px;
-  } */
-  /* #aboutgluten-path .top {
-    display: flex;
-    padding: 5rem 0rem 1.8rem 0rem;
-    align-items: center;
-    display: flex;
-    gap: 25px;
-    z-index: 2;
-  } */
-  
-  /* #aboutgluten-path .top1 p {
-    position: absolute;
-    padding-left: 2rem;
-    font-size: 1.6rem;
-    top: 152rem;
-    width: 581px;
-    height: 76px;
-    color: var(--bg-color2); */
-    /* border: #8a2be2 solid; */
-  /* } */
-  
-  /* #aboutgluten-path .top2 p {
-    position: absolute;
-    padding-left: 2rem;
-    font-size: 1.6rem;
-    top: 152rem;
-    width: 434px;
-    height: 76px;
-    color: var(--bg-color2); */
-    /* border: #8a2be2 solid; */
-  /* } */
-  
-  /* #aboutgluten-path .bottom {
-    padding: 0rem 0rem 0rem 0rem;
-    align-items: center;
-    display: flex;
-    margin-bottom: 20vh;
-    gap: 25px;
-    z-index: 2;
-  } */
-  
-  /* #aboutgluten-path .bottom1 p {
-    position: absolute;
-    padding-left: 2rem;
-    font-size: 1.6rem;
-    top: 176.5rem;
-    width: 29.4rem;
-    height: 76px;
-    color: var(--bg-color2);
-    /* border: #00ff33 solid; */
-  /* } */
-  
-  /* #aboutgluten-path .bottom2 p {
-    position: absolute;
-    padding-left: 2rem;
-    font-size: 1.6rem;
-    top: 176.5rem;
-    width: 34.2rem;
-    height: 76px;
-    color: var(--bg-color2);
-     border: #00ff33 solid; 
-  } */
-  
-  /* .square-block {
-    position: absolute;
-    width: 387px;
-    height: 353px;
-    left: 300px;
-    top: 2100px;
-    z-index: 1;
-  } */
-  
-  /* .round-block {
-    position: absolute;
-    width: 387px;
-    height: 468px;
-    right: 250px;
-    top: 2680px;
-    z-index: 1;
-  } */
-  
+
   #aboutus p {
     text-align: justify;
     /*(換行)中文用比較好*/
@@ -534,7 +416,7 @@ img {
       margin: auto;
       margin-top: 0px;
       width: 500px;
-      /* height: 930px; */
+      height: 332.14px;
       transform: scale(1.1);
       /* justify-content: center; */
       }  
@@ -545,6 +427,11 @@ img {
     .menu-aboutgluten p {
       -webkit-line-clamp: 6;
       margin-bottom: 10px;
+    }
+    .aboutus-content .aboutus-avocado{
+      width: 50px;
+      height: 75.71px;
+      left: 80px;
     }
   }
   
