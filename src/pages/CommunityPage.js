@@ -42,7 +42,7 @@ function CommunityPage() {
         // Banner
         <section className='post_main'>
             <figure className='banner_com'>
-                <img src={banner_com} alt="" />
+                <img className='banner_com-1' src={banner_com} alt="" />
             </figure>
 
         {/* Filter_tag */}
