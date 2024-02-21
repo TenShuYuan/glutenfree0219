@@ -574,6 +574,47 @@ nav .icon a {
   display: flex;
 }
 
+/* #aboutus .title{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  color: var(--major-color2);
+  font-weight: 500;
+} */
+/* #aboutus .title img{
+  width: 20px;
+  margin: 5px;
+} */
+
+/* .aboutus-yam {
+  position: absolute;
+  width: 70px;
+  height: 106px;
+  left: 300px;
+  top: 1150px;
+} */
+
+/* .aboutus-cashew {
+  position: absolute;
+  width: 100px;
+  /* height: 88px;
+  left: 1470px;
+  top: 1150px; */
+/* }  */
+
+/* 主要內容區 */
+/* section {
+  display: flex;
+  flex-direction: column;
+  /* 主軸:垂直 */
+  /* justify-content: center; */
+  /* 主軸:(置中)垂直 */
+  /* align-items: center; */
+  /* 副軸(水平)置中 */
+  /* height: 70vh; */
+  /* 自動抓取視窗高度 */
+/* }  */
+
 .title {
   font-family: "Noto Sans TC", cursive;
   font-size: 1.5rem;
@@ -648,61 +689,21 @@ nav .icon a {
 /* 最大寬為768，小於768的都會符合他的尺寸縮放 */
 /*平板的像素*/
 ) {
-  #topbar {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    /* 預設值為0，數字越大排越上面 */
-    display: center;
-    justify-content: space-between;
-    /* 主軸(水平)齊頭尾 */
-    align-items: flex-start;
-    /* 副軸(垂直)置中 */
-    padding: 35px;
-    background: var(--bg-color1);
-    color: #dda25f;
-  }
-  #topbar .logo {
-    width: 80px;
-    margin-left: 10px;
-  }
-  #topbar nav {
-    display: flex;
-    flex-direction: row;
-    /* 主軸(垂直) */
-    /* align-items: flex-start;
-    center */
-    /* 副軸(水平)置底 */
-    margin-right: 0px;
-    /* background: var(--bg-color1); */
-    color: rgba(221, 162, 95, 1);
-    width: 500px;
-    height: 30px;
-  }
   #topbar .menu2 {
-    width: 50px;
+    width: 90px;
     gap: 5px;
-    margin-top: 6px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: auto;
     display: flex;
   }
   #recipe .list-item:nth-child(n + 3) {
     display: none;
   }
   .menu {
-    justify-content: center;
     width: 100%;
-    gap: 0px;
+    gap: 5px;
     display: flex;
-    margin-top: 12px;
-    /* 線跟字的距離 */
-    color: var(--second-color);
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 500;
-    font-size: 0.5rem;
+    margin-top: 8px;
   }
   .menu-aboutgluten p {
     -webkit-line-clamp: 9;
@@ -712,42 +713,51 @@ nav .icon a {
     display: flex;
     align-items: center;
     /* border-radius: 20px; */
-    margin-left: -50px;
-    padding: 0px;
+    padding: 15px;
     font-style: var(--second-color);
     color: #fffcf5;
   }
   #topbar .menu a {
-    padding: 20px 0;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    line-height: 9px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-style: var(--second-color);
+    color: #fffcf5;
+    line-height: 5px;
+    text-align: justify;
+    padding-top: 0px;
+    padding-bottom: 50px;
     background-color: var(--bg-color1);
   }
   .menu a {
-    margin: 0 0 10px -10px;
+    margin: 0 15rem 0 0.5rem;
     color: var(--second-color);
     font-weight: 400;
   }
   #topbar .icon {
-    margin-bottom: 5px 5px 0 0;
+    margin-bottom: 10px auto 0;
     order: 1;
     /* 排序交換，預設0，改為1後 */
   }
   #topbar .nav_box {
+    /* position: relative; */
     display: flex;
+    /* flex-direction: column; */
+    /* 主軸:垂直 */
+    /* align-items: flex-start; */
+    /* 副軸(水平)置中 */
     color: rgba(221, 162, 95, 1);
   }
   #topbar .bar {
     display: block;
-    width: 20px;
+    width: 10px;
     height: 3px;
     background-color: var(--major-color);
+    margin: 0px 0px;
     transition: 0.35s;
   }
   .menu img {
-    margin-top: 20px;
-    width: 15px;
+    width: 30px;
     display: flex;
   }
   

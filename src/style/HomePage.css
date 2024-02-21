@@ -803,16 +803,105 @@ img {
 }
 
 @media (max-width: 768px) {
+  #banner .content-slider{
+    margin-top: -80px;
+  }
+  #aboutus p{
+    font-size: 0.8rem;
+    line-height: 25px;
+    width: 600px;
+  }
+  #aboutus .title{
+    margin-bottom: -45px;
+    font-size: 1.2rem;
+  }
+  #aboutus .title img{
+    width: 13px;
+    margin: 5px;
+  }
+  #aboutus .aboutus-content .aboutus-avocado {
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 40px;
+    top: 80px;
+    /* 2秒完成一次旋转，线性变化，无限循环 */
+    animation: rotateAnimation 0.5s ease-in-out infinite; 
+  }
+  #aboutus .aboutus-content .aboutus-cashew {
+    position: absolute;
+    width: 40px;
+    left: 670px;
+    top: 80px;
+    animation: rotateAnimation 0.5s ease-in-out infinite; 
+  }
+  #threeimages{
+    margin-top: -40px;
+  }
+  #threeimages .title{
+    font-size: 1.2rem;
+  }
+  #threeimages .title img{
+  width: 13px;
+    margin: 5px;
+  }
+  #threeimages .image{
+    padding-top: 50px;
+    margin: auto;
+    width: 600px;
+  }
+  #threeimages .image h4{
+    font-size: 1rem;
+  }
+  #aboutgluten-path{
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+  #aboutgluten-path .top .path-bluberry{
+    top: -70px;
+    left: 500px;  
+    width: 70px;
+  }
+  #aboutgluten-path .bottom .path-egg{
+    top: 170px;
+    left: -30px;  
+    width: 70px;
+  }
+  #aboutgluten-path .title{
+    font-size: 1.2rem;
+  }
+  #aboutgluten-path .title img{
+    width: 13px;
+      margin: 5px;
+  }
+  #aboutgluten-path .top, .bottom{
+    margin: auto;
+    width: 600px;
+  }
+  #aboutgluten-path .top{
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  #aboutgluten-path .top .square-block{
+    width: 200px;
+    left: -60px;
+    top: -70px;
+  }
+  #aboutgluten-path .bottom .round-block{
+    width: 200px;
+    left: 180px;
+    top: 90px;
+  }
+  
+
   #recipe .list-box {
     flex-direction: column;
   }
-
   #recipe .list-item {
     flex: none;
     height: 35vh;
     margin: 20px 0;
   }
-
   #recipe .list-item:nth-child(n + 3) {
     display: none;
   }

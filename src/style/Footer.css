@@ -43,32 +43,28 @@ footer {
       flex-direction: column;
       align-items: center;
     }
-  
     footer .menu {
       flex-direction: column;
     }
   }
-  
-  /* .btn_fb {
-    background-image: url("../images/icon-fb.svg");
+
+  @media (max-width: 768px) {
+    footer {
+    /* line-height: 50px; 行高設定跟高度一樣可垂直置中 */
+    text-align: center;
+    height: 120px;
+    background-color: var(--bg-color2);
+    color: var(--second-color);
+    padding: 20px 110px 50px 80px;
   }
-  
-  .btn_ig {
-    background-image: url("../images/icon-ig.svg");
+  footer .menu{
+  margin: 20px 0 0 0px;
   }
-  
-  .btn_line {
-    background-image: url("../images/icon-line.svg");
+  footer .menu a{
+    padding-right: 50px;
   }
-  
-  .btn_fb:hover {
-    background-image: url("../images/icon-fb-hover.svg");
+  footer small{
+    font-size: 0.8rem;
   }
-  
-  .btn_ig:hover {
-    background-image: url("../images/icon-ig-hover.svg");
-  }
-  
-  .btn_line:hover {
-    background-image: url("../images/icon-line-hover.svg");
-  } */
+
+}
