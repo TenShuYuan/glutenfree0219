@@ -409,7 +409,7 @@ margin-top: 1px;
   margin: 5px;
 }
 .east_2{
-    width: 1721px;
+    width:100%;
     margin: 0px 100px 142px 100px;
     margin-bottom: 90px;
 }
@@ -424,6 +424,7 @@ margin-top: 1px;
     display: flex;
     width: 296px;
     height: 367px;
+    margin-top: 30px;
 }
 
 .japanese-title2{
@@ -438,7 +439,7 @@ margin-top: 1px;
   margin: 5px;
 }
 .japanese_2{
-    width: 1721px;
+    width: 100%;
     margin: 0px 100px 142px 100px;
     margin-bottom: 90px;
 }
@@ -460,6 +461,7 @@ margin-top: 1px;
     display: flex;
     width: 296px;
     height: 367px;
+    margin-top: 30px
 }
 
 .seemore-btn_2 p{

@@ -615,15 +615,13 @@ margin-top: 5px;
   width: 12px;
   margin: 5px;
 } 
-#cake .east .east1 img{
+#cake .east1{
   width: 320px;
   height: 100%;
   margin-left: 10px;
 }
-#cake .east .east2 img{
-  width: 320px;
-  height: 100%;
-  margin-left: 10px;
+#cake .east2{
+  margin-left: 0px;
 }
 
 }
