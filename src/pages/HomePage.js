@@ -44,11 +44,9 @@ function Homepage() {
     {/* <!-- 換圖輪播 --> */}
     <section  id="banner" >
       <div className="content-slider" >
-            {/* <!-- <div class="banner-inner-wrapper"> --> */}
-            <figure>
-              <img src={banner} alt="" />
-            </figure>
-        </div>
+      {/* <!-- <div class="banner-inner-wrapper"> --> */}
+        <img src={banner} alt="" />
+      </div>
     </section>
 
 <section ref={ref} style={{height:50,}}></section>
